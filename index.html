@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEHRAZ – Visual Stories, Eternal Roots</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    
+  <a href="#" class="nav-logo">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17 3 C17 3 14 8 9 9 C9 9 12 13 11 18 C11 18 14 16 17 17 C20 16 23 18 23 18 C22 13 25 9 25 9 C20 8 17 3 17 3Z" fill="#c9a84c" opacity="0.85"/>
+      <path d="M17 7 C17 7 15 10 12 11 C12 11 14 14 13 17 C13 17 15 16 17 16.5 C19 16 21 17 21 17 C20 14 22 11 22 11 C19 10 17 7 17 7Z" fill="#1a1916" opacity="0.7"/>
+      <circle cx="17" cy="17" r="2.5" fill="#c9a84c" opacity="0.4"/>
+      <path d="M17 1 L17 5 M7 8 L10 10 M27 8 L24 10 M5 20 L9 19 M29 20 L25 19 M10 28 L13 25 M24 28 L21 25" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+    <span class="nav-logo-text">MEHRAZ</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#">SKETCHBOOK</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-title-main">FIND      YOUR
+BALANCE</div>
+    <div class="hero-title-sub">&  DISCOVER
+THE     POWER</div>
+    <p class="hero-tagline">OF CREATIVE
+      SPACE .</p>
+    <div class="hero-divider"></div>
+    <a href="#portfolio" class="btn-outline">VIEW PORTFOLIO</a>
+  </div>
+</section>
+
+<input type="checkbox" id="show-all-anatomy" style="display:none;">
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header">
+    <h2 class="section-title">PORTFOLIO</h2>
+    <p class="section-sub">Explore my work across different mediums and techniques.</p>
+  </div>
+
+  <div class="filter-tabs">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="oil">OIL PAINTING</button>
+    <button class="filter-btn" data-filter="charcoal">CHARCOAL</button>
+    <button class="filter-btn" data-filter="pen">PEN &amp; INK</button>
+    <button class="filter-btn" data-filter="digital">DIGITAL</button>
+    <button class="filter-btn" data-filter="anatomy">ANATOMY</button>
+  </div>
+
+  <!-- رنگ  -->
+
+  <div class="portfolio-grid" id="portfolioGrid">
+
+    <div class="portfolio-item" data-category="oil"
+         data-title="Inner Demon"
+         data-cat="Oil Painting"
+         data-desc="This work explores the confrontation with the inner self, often perceived as a ‘demon’. Instead of escaping or rejecting it, the figure embraces its own shadow. The piece reflects acceptance of hidden aspects of identity and the psychological tension between fear and integration. It suggests that healing begins not by running away, but by facing and holding what we fear within ourselves."
+        data-medium="Oil on Canvas"
+         data-year="2025"
+         data-img="./img/3.png">
+      <img src="./img/3.png" alt="Vermilion Silence" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Inner Demon</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <div class="portfolio-item" data-category="oil"
+         data-title="🌘 Moon Over Twilight"
+         data-cat="Oil Painting"
+         data-desc="Inspired by the early morning twilight — a moment suspended between light and darkness, between sleep and awakening."
+         data-medium="Oil on Canvas"
+         data-year="2024"
+         data-img="./img/2.png">
+      <img src="./img/2.png" alt="The Gaze" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">🌘 Moon Over Twilight</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+<!-- زغال -->
+    <div class="portfolio-item" data-category="charcoal"
+         data-title="Portrait"
+         data-cat="Charcoal"
+         data-desc="Realism "
+         data-medium="Charcoal on Paper"
+         data-year="2023"
+         data-img="./img/arad1.jpg">
+      <img src="./img/arad1.jpg" alt="Classical Study" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Charcoal</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- خودکار -->
+
+    <div class="portfolio-item" data-category="pen"
+         data-title="Portrait"
+         data-cat="Pen"
+         data-desc="Realism "
+         data-medium="Pen on Paper"
+         data-year="2021"
+         data-img="./img/wet.JPG">
+      <img src="./img/wet.JPG" alt="Portrait" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Pen &amp; Ink</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+
+      <!-- رنگ  -->
+
+    <div class="portfolio-item" data-category="oil"
+         data-title="👩‍🎨 Prison of the Body"
+         data-cat="Oil Painting"
+         data-desc="This woman is a symbol of my inner self — created spontaneously, without prior planning, guided only by brush and color rising from the unconscious."
+         data-medium="Oil on Canvas"
+         data-year="2024"
+         data-img="./img/zendan.png">
+      <img src="./img/zendan.png" alt="👩‍🎨 Prison of the Body" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">👩‍🎨 Prison of the Body</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <div class="portfolio-item" data-category="oil"
+         data-title="🚬🥃 Taboo Breaker"
+         data-cat="Oil Painting"
+         data-desc="A bold, independent woman caught between tradition and modernity. She is a symbol of defiance — unafraid, unapologetic."
+         data-medium="Oil on Canvas"
+         data-year="2025"
+         data-img="./img/MYXJ_20250702203944295_save.jpg">
+      <img src="./img/tabo.JPG" alt="🚬🥃 Taboo Breaker" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">🚬🥃 Taboo Breaker</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- خودکار -->
+
+  <div class="portfolio-item" data-category="pen"
+         data-title="Portrait"
+         data-cat="Pen"
+         data-desc="Realism "
+         data-medium="Pen on Paper"
+         data-year="2020"
+         data-img="./img/pir.jpg">
+      <img src="./img/pir.jpg" alt="Portrait" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Pen &amp; Ink</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- رنگ -->
+
+     <div class="portfolio-item" data-category="oil"
+         data-title="Someday
+I will find my way to the
+island "
+         data-cat="Conceptual Abstraction"
+         data-desc="This work is inspired by feelings of isolation, self-imposed confinement, and being lost in a world of solitude. The character within this narrative longs to find a way across the sea of loneliness and reach a sense of freedom."
+         data-medium="Acrylic on canvas"
+         data-year="2025"
+         data-img="./img/alone.png">
+      <img src="./img/alone.png" alt="🚬🥃 Taboo Breaker" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Someday
+I will find my way to the
+island </div>
+        <div class="portfolio-item-cat">Acrylic on canvas</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+
+    <!-- رنگ -->
+
+     <div class="portfolio-item" data-category="oil"
+         data-title="Where Darkness Became Light"
+         data-desc="I used the scarecrow as a personal symbol. It usually stands with open arms, waiting for something from the outside, in a dark and silent world. But in this work, the figure turns inward and embraces itself. In that moment of self-acceptance, light appears. The piece reflects a shift from external longing to inner awareness and emotional self-support."
+         data-medium="Oil on Canvas"
+         data-year="2026"
+         data-img="./img/1.png">
+      <img src="./img/4.png" alt="🚬🥃 Taboo Breaker" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Where Darkness Became Light</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+     <div class="portfolio-item" data-category="pen"
+         data-title="Portrait"
+         data-cat="Pen"
+         data-desc="Realism "
+         data-medium="Pen on Paper"
+         data-year="2021"
+         data-img="./img/boyy.png">
+      <img src="./img/boyy.png" alt="Portrait" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Pen &amp; Ink</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+    
+    <div class="portfolio-item" data-category="pen"
+     data-title="Bloom"
+     data-cat="Colored Pen Drawing"
+     data-desc="A study of organic form and color using ballpoint pens. The work explores delicacy, texture, and the natural flow of floral structures through layered lines."
+     data-medium="Colored Ballpoint Pen on Paper"
+     data-year="2024"
+    data-img="./img/گلل.jpg" style="height: 100%;">
+  <img src="./img/گل.png" alt="Bloom" loading="lazy" />
+<div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">BLOOM</div>
+    <div class="portfolio-item-cat">Colored Pen</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+
+     <div class="portfolio-item" data-category="oil"
+         data-title="Cyber Smile"
+     data-desc="This painting is shaped by a focus on form, color, and the character of the subject. In each piece, color is used as a way to convey a distinct mood and expression."
+         data-medium="Oil on Canvas"
+       data-year="2025"
+         data-img="./img/Beige Minimalist Wall Frame Mockup Instagram Post_20251111_184802_۰۰۰۰.png">
+      <img src="./img/Beige Minimalist Wall Frame Mockup Instagram Post_20251111_184802_۰۰۰۰.png" alt="🚬🥃 Taboo Breaker" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Cyber Smile</div>
+        <div class="portfolio-item-cat">Oil Painting</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+
+     <div class="portfolio-item" data-category="pen"
+         data-title="Portrait"
+         data-cat="Pen"
+         data-desc="Realism "
+         data-medium="Pen on Paper"
+         data-year="2021"
+         data-img="./img/cat.png">
+      <img src="./img/cat.png" alt="Portrait" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Pen &amp; Ink</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+    <!-- زغال  -->
+
+      <div class="portfolio-item" data-category="charcoal"
+         data-title="Portrait"
+         data-cat="Charcoal"
+         data-desc="Realism "
+         data-medium="Charcoal on Paper"
+         data-year="2023"
+         data-img="./img/IMG_1662.JPG">
+      <img src="./img/IMG_1662.JPG" alt="Classical Study" loading="lazy" />
+      <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-title">Portrait</div>
+        <div class="portfolio-item-cat">Charcoal</div>
+        <button class="portfolio-item-link">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- آناتومی -->
+
+ 
+
+
+
+  <div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/1.jpg">
+  <img src="./Anatomy/1.jpg" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+<div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/2.jpg">
+  <img src="./Anatomy/2.jpg" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+<div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/3.jpg">
+  <img src="./Anatomy/3.jpg" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+<div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/4.jpg">
+  <img src="./Anatomy/4.jpg" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+<div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/5.jpg">
+  <img src="./Anatomy/5.jpg" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+<div class="portfolio-item" data-category="anatomy"
+     data-title="Anatomy Study"
+     data-cat="Anatomy / Digital Study"
+     data-desc="A focused study of human anatomy, exploring skeletal and muscular structures through digital drawing. The work emphasizes form, proportion, and structural understanding rather than surface detail."
+     data-medium="Digital Painting (Photoshop)"
+     data-year="2026"
+     data-img="./Anatomy/6.png">
+  <img src="./Anatomy/6.png" alt="Anatomy Study" loading="lazy" />
+  <div class="portfolio-hover-overlay"><div class="portfolio-hover-icon">+</div></div>
+  <div class="portfolio-item-info">
+    <div class="portfolio-item-title">ANATOMY STUDY</div>
+    <div class="portfolio-item-cat">Digital Anatomy</div>
+    <button class="portfolio-item-link">VIEW DETAILS</button>
+  </div>
+</div>
+
+  </div>
+
+  <!-- <div class="view-all-wrap">
+    <a href="#" class="btn-outline">VIEW ALL WORKS</a>
+  </div>
+   -->
+
+    <div class="view-all-wrap">
+    <label for="show-all-anatomy" class="btn-outline" style="cursor: pointer;">VIEW ALL WORKS</label>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <h2 class="about-title">ABOUT ME</h2>
+      <div class="about-divider"></div>
+      <p class="about-text">
+       I’m Mehrnaz, a traditional artist with around a decade of experience. My work primarily focuses on drawing with a ballpoint pen—an everyday tool that I’ve developed into a serious medium for creating detail and form. In my practice, I aim to create a balance between the roots of traditional art and a contemporary perspective. Alongside this, I’m interested in exploring the intersection of art and technology, and how these two spaces can come together to create new experiences. My artistic path is shaped by this combination—somewhere between past and present, tradition and innovation
+      </p>
+      <br>
+      <!-- <a href="#contact" class="btn-outline" style="margin-top:6px"></a> -->
+    </div>
+    <div class="about-images">
+      <img src="./img/ich.jpg"  />
+      <img src="./img/KOLI.jpg" />
+      <img src="./img/duck.jpg "  />
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-top">
+    <div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <span>+98 930 098 6737</span>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <span>mehrnazjh79@gmail.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <span>Iran, Shiraz</span>
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <div class="footer-center-title">LET'S CONNECT</div>
+      <div class="footer-center-divider"></div>
+      <div class="footer-socials">
+        <a href="#" class="social-link" title="Instagram">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="social-link" title="Behance">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.971 13h5.4c-.066-2.308-1.686-2.625-2.664-2.625-.964 0-2.419.317-2.736 2.625zM7 11.457c.67 0 2.72-.162 2.72-1.943 0-1.054-.747-1.514-2.72-1.514H3v3.457h4zm.308 4.543c0-1.578-.773-2.146-2.769-2.146H3V18h1.308c2.051 0 2.998-.398 2.998-2zM.001 6h7.002c1.718 0 4.997.231 4.997 3.5 0 2.01-.988 2.902-2.5 3.5 2.218.527 3.5 1.858 3.5 4 0 3.772-3.281 4.5-5 4.5H.001V6z"/></svg>
+        </a>
+        <a href="#" class="social-link" title="Pinterest">
+          <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <span class="newsletter-label">Subscribe to my newsletter</span>
+      <div class="newsletter-form">
+        <input type="email" class="newsletter-input" id="emailInput" placeholder="Enter your email" />
+        <button class="newsletter-btn" id="subscribeBtn">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2024 MEHRAZ. All rights reserved.</span>
+    <button class="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <img src="" alt="" class="modal-img" id="modalImg" />
+    <div class="modal-body">
+      <div class="modal-category" id="modalCat"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-divider"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-meta">
+        <div class="modal-meta-item">
+          <label>Medium</label>
+          <span id="modalMedium"></span>
+        </div>
+        <div class="modal-meta-item">
+          <label>Year</label>
+          <span id="modalYear"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="root" style="display:none"></div>
+  <script type="module" src="/src/main.tsx"></script>
+ <script src="./s.js"></script>
+
+</body>
+</html>
